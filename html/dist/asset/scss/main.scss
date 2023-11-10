@@ -1,2 +1,42 @@
 @charset 'UTF-8';
 @import 'mixin';
+*{
+    box-sizing: border-box;
+}
+.top_popup{
+    display: inline-block;
+    height: 120px;
+    position: relative;
+    span{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        width: 200px;
+        height: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        margin-left: 1400px;
+        input{
+            height: 20px;
+        }
+        p, img{
+            margin-left: 10px;
+        }
+    }
+}
+header{
+    .header_top{
+        display: flex;
+        align-items: center;
+        background-color: blue;
+        height: 40px;
+        div p{
+            color: white;
+        }
+        .topbox{
+            width: 150px;
+            text-align: center;
+        }
+    }
+}
