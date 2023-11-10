@@ -8,8 +8,8 @@
     height: 120px;
     position: relative;
     span{
-        display: block;
         position: absolute;
+        display: block;
         bottom: 0px;
         width: 200px;
         height: 30px;
@@ -26,17 +26,77 @@
     }
 }
 header{
-    .header_top{
-        display: flex;
-        align-items: center;
-        background-color: blue;
+    .headertopbk{
+        background-color: #2E2EFE;
         height: 40px;
-        div p{
-            color: white;
+        .header_top{
+            display: flex;
+            align-items: center;
+            line-height: 40px;
+            width: 1400px;
+            margin: 0 auto;
+            div p{
+                color: white;
+                font-size: 14px;
+            }
+            .topbox{
+                width: 130px;
+                text-align: center;
+            }
+            .Leftbox{
+                background: #0B0B61;
+            }
         }
-        .topbox{
-            width: 150px;
-            text-align: center;
+    }
+    .HeaderMain{
+        width: 100%;
+        height: 510px;
+        overflow: hidden;
+        background-image: url(../image/main/icon/main_visual.png);
+        position: fixed;
+        
+        .MenuContent{
+            width: 1400px;
+            height: 85px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            .menu{
+                margin-left: 240px;
+                height: 85px;
+                .menufloat{
+                    display: flex;
+                    line-height: 85px;
+                    text-align: center;
+                    li{
+                        width: 150px;
+                        .ffff{
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: #ffff;
+                            ul li {
+                                a{
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sitemap-icon{
+                margin-left: 220px;
+            }
+            
+        }
+        .line{
+            width: 100%;
+            border: 1px solid #c9c9c9;
+            position: relative;
+        }
+        .hoverMenu{
+            width: 100%;
+            overflow: hidden;
+            opacity: 0;
         }
     }
 }

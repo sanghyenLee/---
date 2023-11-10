@@ -8,8 +8,8 @@
   position: relative;
 }
 .top_popup span {
-  display: block;
   position: absolute;
+  display: block;
   bottom: 0px;
   width: 200px;
   height: 30px;
@@ -25,16 +25,72 @@
   margin-left: 10px;
 }
 
-header .header_top {
-  display: flex;
-  align-items: center;
-  background-color: blue;
+header .headertopbk {
+  background-color: #2E2EFE;
   height: 40px;
 }
-header .header_top div p {
+header .headertopbk .header_top {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  width: 1400px;
+  margin: 0 auto;
+}
+header .headertopbk .header_top div p {
+  color: white;
+  font-size: 14px;
+}
+header .headertopbk .header_top .topbox {
+  width: 130px;
+  text-align: center;
+}
+header .headertopbk .header_top .Leftbox {
+  background: #0B0B61;
+}
+header .HeaderMain {
+  width: 100%;
+  height: 510px;
+  overflow: hidden;
+  background-image: url(../image/main/icon/main_visual.png);
+  position: fixed;
+}
+header .HeaderMain .MenuContent {
+  width: 1400px;
+  height: 85px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header .HeaderMain .MenuContent .menu {
+  margin-left: 240px;
+  height: 85px;
+}
+header .HeaderMain .MenuContent .menu .menufloat {
+  display: flex;
+  line-height: 85px;
+  text-align: center;
+}
+header .HeaderMain .MenuContent .menu .menufloat li {
+  width: 150px;
+}
+header .HeaderMain .MenuContent .menu .menufloat li .ffff {
+  font-size: 18px;
+  font-weight: 600;
   color: white;
 }
-header .header_top .topbox {
-  width: 150px;
-  text-align: center;
+header .HeaderMain .MenuContent .menu .menufloat li .ffff ul li a {
+  color: black;
+}
+header .HeaderMain .MenuContent .sitemap-icon {
+  margin-left: 220px;
+}
+header .HeaderMain .line {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  position: relative;
+}
+header .HeaderMain .hoverMenu {
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
