@@ -1,1 +1,115 @@
-/*# sourceMappingURL=common.css.map */
+* {
+  box-sizing: border-box;
+}
+
+.top_popup {
+  display: inline-block;
+  height: 120px;
+  position: relative;
+}
+.top_popup span {
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  width: 200px;
+  height: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  margin-left: 1400px;
+}
+.top_popup span input {
+  height: 20px;
+}
+.top_popup span p, .top_popup span img {
+  margin-left: 10px;
+}
+
+header .headertopbk {
+  background-color: #2E2EFE;
+  height: 40px;
+}
+header .headertopbk .header_top {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  width: 1400px;
+  margin: 0 auto;
+}
+header .headertopbk .header_top div p {
+  color: white;
+  font-size: 14px;
+}
+header .headertopbk .header_top .topbox {
+  width: 130px;
+  text-align: center;
+}
+header .headertopbk .header_top .Leftbox {
+  background: #0B0B61;
+}
+header .HeaderMain {
+  width: 100%;
+  height: 510px;
+  overflow: hidden;
+  background-image: url(../image/main/icon/main_visual.png);
+  position: fixed;
+}
+header .HeaderMain .MenuContent {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  transition: 0.2s;
+}
+header .HeaderMain .MenuContent .menu {
+  margin-left: 240px;
+  height: 85px;
+  z-index: 100;
+}
+header .HeaderMain .MenuContent .menu .menufloat {
+  display: flex;
+  line-height: 85px;
+  text-align: center;
+}
+header .HeaderMain .MenuContent .menu .menufloat li {
+  width: 180px;
+  height: 460px;
+}
+header .HeaderMain .MenuContent .menu .menufloat li div {
+  height: 370px;
+  z-index: 3;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+  background: #fff;
+}
+header .HeaderMain .MenuContent .menu .menufloat li div ul > li {
+  line-height: 40px;
+  height: 40px;
+}
+header .HeaderMain .MenuContent .menu .menufloat li div ul > li a {
+  font-size: 14px;
+}
+header .HeaderMain .MenuContent .menu .menufloat li div ul > li a:hover {
+  color: #2E2EFE;
+}
+header .HeaderMain .MenuContent .menu .menufloat .bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+header .HeaderMain .MenuContent .sitemap-icon {
+  margin-left: 220px;
+}
+header .HeaderMain .line {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  position: relative;
+  z-index: 4;
+}
+header .HeaderMain .menubk {
+  background-image: url(../image/common/icon/header_subground.png);
+  width: 100%;
+  height: 370px;
+}/*# sourceMappingURL=common.css.map */
