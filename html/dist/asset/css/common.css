@@ -4,6 +4,7 @@
 
 .top_popup {
   display: inline-block;
+  width: 100%;
   height: 120px;
   position: relative;
 }
@@ -27,6 +28,7 @@
 }
 
 header {
+  overflow: hidden;
   height: 125px;
 }
 header .headertopbk {
