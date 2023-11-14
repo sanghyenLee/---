@@ -94,16 +94,22 @@ header .HeaderMain .MenuContent .menu .menufloat a {
 header .HeaderMain .MenuContent .menu .menufloat li {
   width: 200px;
   height: 460px;
+  position: relative;
+}
+header .HeaderMain .MenuContent .menu .menufloat li:hover > div {
+  background-color: #d8ebff;
+}
+header .HeaderMain .MenuContent .menu .menufloat li .dep {
+  border-right: 1px solid #c9c9c9;
 }
 header .HeaderMain .MenuContent .menu .menufloat li div {
-  height: 367px;
+  position: absolute;
+  bottom: 5.5px;
+  width: 200px;
+  height: 370px;
   z-index: 990;
   border-left: 1px solid #c9c9c9;
-  border-right: 1px solid #c9c9c9;
   background: #fff;
-}
-header .HeaderMain .MenuContent .menu .menufloat li div:hover {
-  background-color: #2e2efe;
 }
 header .HeaderMain .MenuContent .menu .menufloat li div ul {
   width: 180px;

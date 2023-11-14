@@ -93,15 +93,22 @@ header {
           li {
             width: 200px;
             height: 460px;
+            position: relative;
+            &:hover > div {
+              background-color: #d8ebff;
+            }
+            .dep {
+              border-right: 1px solid #c9c9c9;
+            }
             div {
-              height: 367px;
+              position: absolute;
+              bottom: 5.5px;
+              width: 200px;
+              height: 370px;
               z-index: 990;
               border-left: 1px solid #c9c9c9;
-              border-right: 1px solid #c9c9c9;
               background: #fff;
-              &:hover {
-                background-color: #2e2efe;
-              }
+
               ul {
                 width: 180px;
                 height: 280px;
