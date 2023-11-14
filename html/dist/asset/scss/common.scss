@@ -1,120 +1,150 @@
 @charset 'UTF-8';
-@import 'mixin';
-*{
-    box-sizing: border-box;
+@import "mixin";
+* {
+  box-sizing: border-box;
 }
-.top_popup{
-    display: inline-block;
-    height: 120px;
+.top_popup {
+  display: inline-block;
+  height: 120px;
+  position: relative;
+  span {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    width: 200px;
+    height: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    margin-left: 1470px;
+    input {
+      height: 20px;
+    }
+    p,
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+header {
+  //   overflow: hidden;
+  height: 125px;
+  .headertopbk {
+    background-color: #2e2efe;
+    height: 40px;
+    .header_top {
+      display: flex;
+      align-items: center;
+      line-height: 40px;
+      width: 1400px;
+      margin: 0 auto;
+      div p {
+        color: white;
+        font-size: 14px;
+      }
+      .topbox {
+        width: 130px;
+        text-align: center;
+      }
+      .Leftbox {
+        background: #0b0b61;
+      }
+    }
+  }
+  .HeaderMain {
+    width: 100%;
+    height: 85px;
+    z-index: 99;
+    // overflow: hidden;
     position: relative;
-    span{
-        position: absolute;
-        display: block;
-        bottom: 0px;
-        width: 200px;
-        height: 30px;
-        transform: translateY(-50%);
-        display: flex;
-        align-items: center;
-        margin-left: 1400px;
-        input{
-            height: 20px;
+    border-bottom: 1px solid #c9c9c9;
+    .MenuContent {
+      width: 1400px;
+      margin: 0 auto;
+      height: 85px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      transition: 0.2s;
+      span > a {
+        .headerlogo {
+          position: relative;
         }
-        p, img{
-            margin-left: 10px;
+        .headerlogoh {
+          position: absolute;
+          left: 0;
+          opacity: 0;
         }
-    }
-}
-header{
-    .headertopbk{
-        background-color: #2E2EFE;
-        height: 40px;
-        .header_top{
-            display: flex;
-            align-items: center;
-            line-height: 40px;
-            width: 1400px;
-            margin: 0 auto;
-            div p{
-                color: white;
-                font-size: 14px;
-            }
-            .topbox{
-                width: 130px;
-                text-align: center;
-            }
-            .Leftbox{
-                background: #0B0B61;
-            }
-        }
-    }
-    .HeaderMain{
-        width: 100%;
-        height: 510px;
-        overflow: hidden;
-        background-image: url(../image/main/icon/main_visual.png);
-        position: fixed;
-        .MenuContent{
-            width: 100%;
+      }
+      .menu {
+        padding-left: 160px;
+        height: 85px;
+        z-index: 100;
+        .menufloat {
+          display: flex;
+          line-height: 85px;
+          text-align: center;
+          a {
+            display: inline-block;
+            width: 200px;
             height: 85px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-            transition: .2s;
-            .menu{
-                margin-left: 240px;
-                height: 85px;
-                z-index: 100;
-                .menufloat{
-                    display: flex;
-                    line-height: 85px;
-                    text-align: center;
-                    li{
-                        width: 180px;  
-                        height: 460px;
-                       div{
-                        height: 370px;
-                        z-index: 3;
-                        border-left: 1px solid #c9c9c9;
-                        border-right: 1px solid #c9c9c9;
-                        background: #fff;
-                            ul>li{
-                                line-height: 40px;
-                                height: 40px;
-                                a{
-                                    font-size: 14px;
-                                    &:hover{
-                                        color: #2E2EFE;
-                                    }
-                                }
-                            } 
-                       }
+          }
+          li {
+            width: 200px;
+            height: 460px;
+            div {
+              height: 367px;
+              z-index: 990;
+              border-left: 1px solid #c9c9c9;
+              border-right: 1px solid #c9c9c9;
+              background: #fff;
+              &:hover {
+                background-color: #2e2efe;
+              }
+              ul {
+                width: 180px;
+                height: 280px;
+                li {
+                  line-height: 40px;
+                  height: 40px;
+                  a {
+                    width: 200px;
+                    height: 40px;
+                    font-size: 14px;
+                    &:hover {
+                      font-weight: 600;
+                      color: #2e2efe;
                     }
-                    .bold{
-                        font-size: 18px;
-                        font-weight: bold;
-                    }
-                   
+                  }
                 }
+              }
             }
-            .sitemap-icon{
-                margin-left: 220px;
+            .bold {
+              color: #ffffff;
+              font-size: 20px;
+              font-weight: bold;
             }
-            
+          }
         }
-        .line{
-            width: 100%;
-            border: 1px solid #c9c9c9;
-            position: relative;
-            z-index: 4;
-        }
-        .menubk{
-            background-image: url(../image/common/icon/header_subground.png);
-            width: 100%;
-            height: 370px
-        }
+      }
+      .sitemap-icon {
+        margin-left: 175px;
+      }
+      .sitemap {
+        position: relative;
+      }
+      .sitemaph {
+        position: absolute;
+        right: 0;
+        opacity: 0;
+      }
     }
+    .menubk {
+      background-image: url(../image/common/icon/header_subground.png);
+      width: 100%;
+      height: 370px;
+      z-index: 900;
+    }
+  }
 }
-

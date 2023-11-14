@@ -1,1 +1,14 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  width: 100%;
+}
+.Container .backgroundimg {
+  height: 510px;
+  background-image: url(../image/main/icon/main_visual.png);
+  background-position: center;
+  margin: -85px auto 0 auto;
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */

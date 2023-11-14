@@ -16,17 +16,21 @@
   transform: translateY(-50%);
   display: flex;
   align-items: center;
-  margin-left: 1400px;
+  margin-left: 1470px;
 }
 .top_popup span input {
   height: 20px;
 }
-.top_popup span p, .top_popup span img {
+.top_popup span p,
+.top_popup span img {
   margin-left: 10px;
 }
 
+header {
+  height: 125px;
+}
 header .headertopbk {
-  background-color: #2E2EFE;
+  background-color: #2e2efe;
   height: 40px;
 }
 header .headertopbk .header_top {
@@ -45,27 +49,35 @@ header .headertopbk .header_top .topbox {
   text-align: center;
 }
 header .headertopbk .header_top .Leftbox {
-  background: #0B0B61;
+  background: #0b0b61;
 }
 header .HeaderMain {
   width: 100%;
-  height: 510px;
-  overflow: hidden;
-  background-image: url(../image/main/icon/main_visual.png);
-  position: fixed;
+  height: 85px;
+  z-index: 99;
+  position: relative;
+  border-bottom: 1px solid #c9c9c9;
 }
 header .HeaderMain .MenuContent {
-  width: 100%;
+  width: 1400px;
+  margin: 0 auto;
   height: 85px;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 2;
   transition: 0.2s;
 }
+header .HeaderMain .MenuContent span > a .headerlogo {
+  position: relative;
+}
+header .HeaderMain .MenuContent span > a .headerlogoh {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
 header .HeaderMain .MenuContent .menu {
-  margin-left: 240px;
+  padding-left: 160px;
   height: 85px;
   z-index: 100;
 }
@@ -74,42 +86,61 @@ header .HeaderMain .MenuContent .menu .menufloat {
   line-height: 85px;
   text-align: center;
 }
+header .HeaderMain .MenuContent .menu .menufloat a {
+  display: inline-block;
+  width: 200px;
+  height: 85px;
+}
 header .HeaderMain .MenuContent .menu .menufloat li {
-  width: 180px;
+  width: 200px;
   height: 460px;
 }
 header .HeaderMain .MenuContent .menu .menufloat li div {
-  height: 370px;
-  z-index: 3;
+  height: 367px;
+  z-index: 990;
   border-left: 1px solid #c9c9c9;
   border-right: 1px solid #c9c9c9;
   background: #fff;
 }
-header .HeaderMain .MenuContent .menu .menufloat li div ul > li {
+header .HeaderMain .MenuContent .menu .menufloat li div:hover {
+  background-color: #2e2efe;
+}
+header .HeaderMain .MenuContent .menu .menufloat li div ul {
+  width: 180px;
+  height: 280px;
+}
+header .HeaderMain .MenuContent .menu .menufloat li div ul li {
   line-height: 40px;
   height: 40px;
 }
-header .HeaderMain .MenuContent .menu .menufloat li div ul > li a {
+header .HeaderMain .MenuContent .menu .menufloat li div ul li a {
+  width: 200px;
+  height: 40px;
   font-size: 14px;
 }
-header .HeaderMain .MenuContent .menu .menufloat li div ul > li a:hover {
-  color: #2E2EFE;
+header .HeaderMain .MenuContent .menu .menufloat li div ul li a:hover {
+  font-weight: 600;
+  color: #2e2efe;
 }
-header .HeaderMain .MenuContent .menu .menufloat .bold {
-  font-size: 18px;
+header .HeaderMain .MenuContent .menu .menufloat li .bold {
+  color: #ffffff;
+  font-size: 20px;
   font-weight: bold;
 }
 header .HeaderMain .MenuContent .sitemap-icon {
-  margin-left: 220px;
+  margin-left: 175px;
 }
-header .HeaderMain .line {
-  width: 100%;
-  border: 1px solid #c9c9c9;
+header .HeaderMain .MenuContent .sitemap {
   position: relative;
-  z-index: 4;
+}
+header .HeaderMain .MenuContent .sitemaph {
+  position: absolute;
+  right: 0;
+  opacity: 0;
 }
 header .HeaderMain .menubk {
   background-image: url(../image/common/icon/header_subground.png);
   width: 100%;
   height: 370px;
+  z-index: 900;
 }/*# sourceMappingURL=common.css.map */
