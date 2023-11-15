@@ -29,17 +29,38 @@ $(document).ready(function () {
       $(".sitemaph").not(":animated").css({ opacity: "1" });
     }, 100);
   });
+
+  //   $('ul.tabs li').click(function(){
+  //     var tab_id = $(this).attr('data-tab');
+
+  //     $('ul.tabs li').removeClass('current');
+  //     $('.tab-content').removeClass('current');
+
+  //     $(this).addClass('current');
+  //     $("#"+tab_id).addClass('current');
+  // });
 });
-var swiper = new Swiper(".swiper-container", {
-  direction: "horizontal",
-  loop: true,
+var mySwiper = new Swiper(".swiper-container", {
+  loop: false,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: "bullets",
   },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+var mySwiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  loop: false,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

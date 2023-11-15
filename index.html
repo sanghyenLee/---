@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./html/dist/asset/css/main.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <title>대진대</title>
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <span class="top_popup">
       <img
@@ -137,21 +137,21 @@
           <div class="main-top-left">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiperslide">
+                <div class="slide swiper-slide">
                   <a href="#"
                     ><img
                       src="./html/dist/asset/image/main/icon/m-left-swip--1.png"
                       alt="m-left-swip--1"
                   /></a>
                 </div>
-                <div class="swiperslide">
+                <div class="slide swiper-slide">
                   <a href="#"
                     ><img
                       src="./html/dist/asset/image/main/icon/m-left-swip--1.png"
                       alt="m-left-swip--1"
                   /></a>
                 </div>
-                <div class="swiperslide">
+                <div class="slide swiper-slide">
                   <a href="#"
                     ><img
                       src="./html/dist/asset/image/main/icon/m-left-swip--1.png"
@@ -163,12 +163,190 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
+            <div class="left-cont">
+              <p class="cont-tit">수시/정시/편입학 전화상담 연락처</p>
+              <strong>031-539-1234</strong>
+              <p class="cont-txt">평일 10:00 ~ 17:00 (공휴일,중식시간 제외)</p>
+            </div>
+          </div>
+          <div class="main-top-right">
+            <div class="right-swip">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide right">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon1.png"
+                          alt="right-swip--icon1"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>대입정보포털</p>
+                      <span>어디가 바로가기</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide left">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon2.png"
+                          alt="right-swip--icon2"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>입학상담신청</p>
+                      <span>화상전화상담</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide right">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon3.png"
+                          alt="right-swip--icon3"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>입학상담신청</p>
+                      <span>익명게시판</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide left">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon4.png"
+                          alt="right-swip--icon4"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>자료실</p>
+                      <span>제출서식</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide right">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon1.png"
+                          alt="right-swip--icon1"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>대입정보포털</p>
+                      <span>어디가 바로가기</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide left">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon2.png"
+                          alt="right-swip--icon2"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>입학상담신청</p>
+                      <span>화상전화상담</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide right">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon3.png"
+                          alt="right-swip--icon3"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>입학상담신청</p>
+                      <span>익명게시판</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide left">
+                    <div class="swip-icon">
+                      <a href="#"
+                        ><img
+                          src="./html/dist/asset/image/main/icon/right-swip--icon4.png"
+                          alt="right-swip--icon4"
+                      /></a>
+                    </div>
+                    <div class="swip-text">
+                      <p>자료실</p>
+                      <span>제출서식</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="right-cont">
+              <div class="tabmenu">
+                <div class="tab-navi">
+                  <p class="main-subtit">공지사항</p>
+                  <button class="plus">
+                    <img
+                      src="./html/dist/asset/image/main/icon/main-plus.png"
+                      alt="main-plus"
+                    />
+                  </button>
+                  <ul class="tabs">
+                    <li class="tab-link current" date-tab="tab-1">전체</li>
+                    <li class="tab-link" date-tab="tab-2">수시</li>
+                    <li class="tab-link" date-tab="tab-3">정시</li>
+                    <li class="tab-link" date-tab="tab-4">편입학</li>
+                    <li class="tab-link" date-tab="tab-5">재외국인</li>
+                    <li class="tab-link" date-tab="tab-6">외국인</li>
+                    <li class="tab-link" date-tab="tab-7">기타</li>
+                  </ul>
+                </div>
+                <div class="tab-cont">
+                  <div id="tab-1" class="tab-content current">
+                    <ul>
+                      <li>
+                        <span class="color notice-purple">수시</span>
+                        <a href="#" class="notice-tit"
+                          >[2023학년도 수시] 학생부종합(윈윈대진전형) 1단계
+                          합격자 (면접고사 수험생) 유의사항</a
+                        >
+                        <span class="notice-year">2023.03.07</span>
+                      </li>
+                      <li>
+                        <span class="color notice-bluegreen">편입학</span>
+                        <a href="#" class="notice-tit"
+                          >[2023학년도 편입] 편입학 1차-2차 합격자 조회 및
+                          등록금 고지서 조회</a
+                        >
+                        <span class="notice-year">2023.03.07</span>
+                      </li>
+                      <li>
+                        <span class="color notice-emerald">재외국인</span>
+                        <a href="#" class="notice-tit"
+                          >[2023학년도] 수시정시 실기위주전형 시각디자인학과,
+                          산업디자인학과 기초디자인 이미지</a
+                        >
+                        <span class="notice-year">2023.03.07</span>
+                      </li>
+                      <li>
+                        <span class="color notice-lightgreen">기타</span>
+                        <a href="#" class="notice-tit"
+                          >[2022년 고교교육 기여대학 지원사업] 추수지도 프로그램
+                          활동보고서 제출 안내</a
+                        >
+                        <span class="notice-year">2023.03.07</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./html/dist/asset/js/lib/script.js"></script>
   </body>
 </html>
