@@ -224,6 +224,12 @@
   border-radius: 30px;
   transform: translateX(-50%);
 }
+.Container .Main .main-top .main-top-right .right-cont .tab-cont .tab-content {
+  display: none;
+}
+.Container .Main .main-top .main-top-right .right-cont .tab-cont .tab-content.current {
+  display: inherit;
+}
 .Container .Main .main-top .main-top-right .right-cont .tab-cont .tab-content ul {
   box-sizing: border-box;
 }

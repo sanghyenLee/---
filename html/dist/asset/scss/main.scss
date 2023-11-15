@@ -228,11 +228,11 @@
             }
           }
           .tab-cont {
-            .current {
-              // display: inherit;
-            }
             .tab-content {
-              // display: none;
+              display: none;
+              &.current {
+                display: inherit;
+              }
               ul {
                 box-sizing: border-box;
                 li {
