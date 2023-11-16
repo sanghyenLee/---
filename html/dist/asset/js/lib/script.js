@@ -39,6 +39,16 @@ $(document).ready(function () {
     $(this).addClass("current");
     $("#" + tab_id).addClass("current");
   });
+
+  $("ul.tab li").click(function () {
+    var center_tab = $(this).attr("data-tab");
+
+    $("ul.tab li").removeClass("cur");
+    $(".tab-content").removeClass("cur");
+
+    $(this).addClass("cur");
+    $("#" + center_tab).addClass("cur");
+  });
 });
 var mySwiper = new Swiper(".swiper-container", {
   loop: false,
