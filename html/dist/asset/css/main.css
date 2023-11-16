@@ -381,4 +381,71 @@
 .Container .Main .main-bottom {
   margin-top: 80px;
   display: flex;
+}
+.Container .Main .main-bottom .mb_30 {
+  margin-bottom: 30px;
+}
+.Container .Main .main-bottom .main-bottom-left {
+  width: 52.5%;
+  display: flex;
+  margin-right: 40px;
+  flex-direction: column;
+}
+.Container .Main .main-bottom .main-bottom-left .main-subtit {
+  float: left;
+  font-size: 28px;
+  font-weight: 600;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont {
+  height: calc(100% - 70px);
+  border-radius: 5.2px;
+  border: 1px solid transparent;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon {
+  display: flex;
+  flex-flow: row wrap;
+  clear: both;
+  align-content: space-between;
+  margin-left: -10px;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li {
+  cursor: pointer;
+  width: calc(50% - 20px);
+  height: 151px;
+  background: #f6f8fb;
+  border: 1px solid #e1e4e8;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li:nth-child(3), .Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li:nth-child(4) {
+  margin-top: 10px;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li:hover {
+  background: #193296;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li:hover p {
+  color: #fff;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li:hover a > .campus-icons {
+  display: none;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li a {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li a .campus-icons {
+  position: relative;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li a .campus-icons {
+  position: absolute;
+}
+.Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li p {
+  font-weight: 500;
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
