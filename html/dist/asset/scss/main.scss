@@ -459,6 +459,76 @@
           }
         }
       }
+      .main-bottom-right {
+        width: 47.5%;
+        .btns {
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: space-between;
+          .main-submit {
+            float: left;
+            font-size: 28px;
+            font-weight: 600;
+          }
+          .btns-control {
+            display: flex;
+            align-items: center;
+            .swiper-pagination-fraction {
+              width: initial;
+              font-weight: 400;
+              font-size: 15px;
+              color: #777;
+              margin-right: 25px;
+              .swiper-pagination-current {
+                font-size: 15px;
+                font-weight: 400;
+                color: #000;
+              }
+            }
+            .swiper-button-prev {
+              position: initial;
+              margin: 0;
+              margin-right: 15px;
+              width: fit-content;
+              height: fit-content;
+              &::after {
+                font-size: 0;
+                font-weight: 600;
+                width: 7px;
+                height: 12px;
+                background-image: url(../image/main/icon/bottom-swip--left.png);
+              }
+            }
+            .btns-pause {
+              cursor: pointer;
+              position: relative;
+              width: 7px;
+              height: 10px;
+              margin: 0;
+              margin-top: 0.5px;
+              background-image: url(../image/main/icon/btn_pause.png);
+              &.on {
+                background-image: url(../image/main/icon/btn_start.png);
+              }
+            }
+            .swiper-button-next {
+              position: initial;
+              width: fit-content;
+              height: fit-content;
+              margin: 0;
+              margin-left: 15px;
+              &::after {
+                font-size: 0;
+                font-weight: 600;
+                width: 7px;
+                height: 12px;
+                background-image: url(../image/main/icon/bottom-swip--right.png);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

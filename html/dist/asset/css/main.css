@@ -448,4 +448,78 @@
 .Container .Main .main-bottom .main-bottom-left .main-cont .campus-icon li p {
   font-weight: 500;
   font-size: 18px;
+}
+.Container .Main .main-bottom .main-bottom-right {
+  width: 47.5%;
+}
+.Container .Main .main-bottom .main-bottom-right .btns {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .main-submit {
+  float: left;
+  font-size: 28px;
+  font-weight: 600;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control {
+  display: flex;
+  align-items: center;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .swiper-pagination-fraction {
+  width: initial;
+  font-weight: 400;
+  font-size: 15px;
+  color: #777;
+  margin-right: 25px;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .swiper-pagination-fraction .swiper-pagination-current {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .swiper-button-prev {
+  position: initial;
+  margin: 0;
+  margin-right: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .swiper-button-prev::after {
+  font-size: 0;
+  font-weight: 600;
+  width: 7px;
+  height: 12px;
+  background-image: url(../image/main/icon/bottom-swip--left.png);
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .btns-pause {
+  cursor: pointer;
+  position: relative;
+  width: 7px;
+  height: 10px;
+  margin: 0;
+  margin-top: 0.5px;
+  background-image: url(../image/main/icon/btn_pause.png);
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .btns-pause.on {
+  background-image: url(../image/main/icon/btn_start.png);
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .swiper-button-next {
+  position: initial;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  margin-left: 15px;
+}
+.Container .Main .main-bottom .main-bottom-right .btns .btns-control .swiper-button-next::after {
+  font-size: 0;
+  font-weight: 600;
+  width: 7px;
+  height: 12px;
+  background-image: url(../image/main/icon/bottom-swip--right.png);
 }/*# sourceMappingURL=main.css.map */
